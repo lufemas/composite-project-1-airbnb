@@ -1,3 +1,55 @@
 body {
-  background: lightblue;
+  background: #FFF6E3;
 }
+
+.flex-container {
+  /* border: solid black; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.logo {
+  background: url('../img/logo-small.svg') no-repeat  ;
+  background-size: contain;
+  margin: 1.4em 0 1.4em 1.4em;
+  width: 2em;
+  /* border: solid pink; */
+
+}
+
+.search {
+  padding: 1em;
+  flex-grow: 1;
+  /* border: solid green; */
+  display: flex;
+  flex-direction: column;
+}
+
+.search [type="text"]{
+  height: 100%;
+  width: 100%;
+  border: none;
+  height: 3em;
+  box-shadow: 0.08em 0.08em 2px rgb(233, 232, 232);
+  background-color: white;
+  /* border: solid purple; */
+}
+
+.search .search-nav {
+  margin-top: 0.4em;
+  text-align: right;
+  /* height: 100%; */
+  /* border: solid gray; */
+  
+}
+
+button{
+  border: none;
+  box-shadow: 0.08em 0.08em 2px rgb(233, 232, 232);
+  background-color: white;
+  padding: 0.5em;
+  
+}
+
