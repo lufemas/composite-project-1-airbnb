@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590.082" height="422.313" viewBox="0 0 590.082 422.313">
+  <g id="image-placeholder" transform="translate(0.291 0.407)">
+    <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(0.5 0.5)" fill="#eee" stroke="#707070" stroke-width="1">
+      <rect width="589" height="421" stroke="none"/>
+      <rect x="0.5" y="0.5" width="588" height="420" fill="none"/>
+    </g>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(14.5 331.5)" fill="#eee">
+      <path d="M10.5,0,21,1H0Z" stroke="none"/>
+      <path d="M 10.5 0 L 21 1 L 0 1 L 10.5 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="589.5" y2="421.5" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" y1="421.5" x2="589.5" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

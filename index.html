@@ -7,15 +7,26 @@
 	<title>[Fill in title here]</title>
 	<meta name="author" content="[Your name here]">
 	<meta name="description" content="[Description of site here]">
+	<script src="https://kit.fontawesome.com/fd1beb02b6.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/default.css">
 </head>
 <body>
 	<header class="flex-container">
-
-		<div class="logo"></div>
-
+		
+		<nav class="main-nav">
+			<div class="logo">
+				<button class="btn-drop-down-nav">▼</button>
+			</div>	
+			<ul class="main-nav-bar">
+				<li>En (CA)</li>
+				<li>$ CAD</li>
+				<li>Login</li>
+				<li>Sign Up</li>
+			</ul>
+		</nav>
+		
 		<div class="search">
 			<input type="text">
 			
@@ -31,16 +42,25 @@
 
 	<main>
 		<section class="search-result-item">
-			<div>s2</div>
-			<div class="room-slider">
+			
+			<div class="item-slider-container">
+				<img src="./img/carroussel-placeholder.svg" alt="">
+				<div class="btn-like"><i class="far fa-heart"></i></div>
 			</div>
 			
-			<div>* 5.0 (12)</div>
-			<h2>Lorem, ipsum dolor.</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore quaerat doloremque labore quasi deserunt quam error, iste cum autem!</p>
-			
-			<p>$$$/night</p>
-			<p>$$$/Total</p>
+			<section class="item-content">
+				<div class="item-content-header">
+					<h2 class="item-content-title">Lorem, ipsum dolor.</h2><div><i class="fas fa-star rate-star"></i> <strong class="rate">5.0</strong> <em class="raters">(12)</em></div>
+				</div>
+					
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore quaerat doloremque labore quasi deserunt quam error, iste cum autem!</p>
+				
+				<div class="item-price-container">
+					<p class="item-price">$$$/night</p>
+					<p class="item-price-total">$$$/Total</p>
+				</div>
+			</section>
+
 		</section>
 	</main>
 
