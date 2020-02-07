@@ -6,7 +6,6 @@ body {
 }
 
 .flex-container {
-  /* border: solid black; */
   display: flex;
   width: 100%;
   justify-content: center;
@@ -20,21 +19,16 @@ body {
   width: 2em;
   position: relative;
   z-index: 3;
-  /* border: solid pink; */
 
 }
 
 .main-nav{
   display: flex;
-  /* background-color: white; */
   position: relative;
-  /* border: solid; */
   
 }
 
 .main-nav-bar{
-  /* padding-top: 5em; */
-  /* display: flex; */
   flex-direction: column;
   justify-content: space-evenly;
   position: absolute;
@@ -48,7 +42,6 @@ body {
 }
 
 .main-nav-bar li {
-  /* border: solid tomato; */
   padding: 1.5em;
   border-bottom: 0.01em solid lightgray;
   font-size: 1.5em;
@@ -62,7 +55,6 @@ body {
   background-color: rgba(0,0,0,0);
   font-size: 0.75em;
   display: inline;
-  /* padding: 0; */
   position: absolute;
   box-shadow: none;
   width: 3.8em;
@@ -74,14 +66,12 @@ body {
 
 
 .main-nav:hover .btn-drop-down-nav {
-  /* background-color: green; */
   transform: scale(1, -1);
 }
 
 .search {
   padding: 1em;
   flex-grow: 1;
-  /* border: solid green; */
   display: flex;
   flex-direction: column;
 }
@@ -93,15 +83,11 @@ body {
   height: 3em;
   box-shadow: 0.08em 0.08em 2px rgb(233, 232, 232);
   background-color: white;
-  /* border: solid purple; */
 }
 
 .search .search-nav {
   margin-top: 0.4em;
-  text-align: right;
-  /* height: 100%; */
-  /* border: solid gray; */
-  
+  text-align: right; 
 }
 
 button{
@@ -113,17 +99,12 @@ button{
 }
 
 .search-result-item {
-  /* border: solid black; */
   padding: 1.5em;
   background: white;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .item-slider-container {
-  /* flex-grow: 2; */
   width: 100%;
-  /* border: solid pink; */
   background: gray url('../img/carroussel-placeholder.svg') no-repeat;
   background-size: contain;
   position: relative;
@@ -132,7 +113,6 @@ button{
 
 .item-slider-container img {
   width: 100%;
-  /* height: 100%; */
 }
 
 .btn-like {
@@ -149,8 +129,6 @@ i {
 }
 
 .item-content{
-  /* border: solid; */
-  /* flex-grow: 1; */
   background-color: white;
   padding: 0.7em 0 0 0;
 
@@ -160,7 +138,6 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0.7em 0em; */
 }
 
 .item-content-title {
@@ -185,7 +162,6 @@ i {
 }
 
 .item-price-container {
-  /* padding: 0.7em 0; */
 }
 
 .item-price {
@@ -198,7 +174,15 @@ i {
 }
 
 @media only screen and (min-width: 900px) {
+  
+  
 
+}
+
+@media only screen and (min-width: 1200px) {
+  body{
+    background-color: black;
+  }
   
 
 }
