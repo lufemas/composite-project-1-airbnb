@@ -28,7 +28,7 @@ body {
   display: flex;
   /* background-color: white; */
   position: relative;
-  border: solid;
+  /* border: solid; */
   
 }
 
@@ -64,6 +64,7 @@ body {
   display: inline;
   /* padding: 0; */
   position: absolute;
+  box-shadow: none;
   width: 3.8em;
   height: 3.5em;
   padding-left: 2.8em;
@@ -71,8 +72,10 @@ body {
   top: -5%;
 }
 
-.btn-drop-down-nav:hover {
-  background-color: green;
+
+.main-nav:hover .btn-drop-down-nav {
+  /* background-color: green; */
+  transform: scale(1, -1);
 }
 
 .search {
@@ -110,7 +113,9 @@ button{
 }
 
 .search-result-item {
-  border: solid black;
+  /* border: solid black; */
+  padding: 1.5em;
+  background: white;
   /* display: flex;
   flex-direction: column; */
 }
@@ -118,7 +123,7 @@ button{
 .item-slider-container {
   /* flex-grow: 2; */
   width: 100%;
-  border: solid pink;
+  /* border: solid pink; */
   background: gray url('../img/carroussel-placeholder.svg') no-repeat;
   background-size: contain;
   position: relative;
@@ -144,9 +149,10 @@ i {
 }
 
 .item-content{
+  /* border: solid; */
   /* flex-grow: 1; */
   background-color: white;
-  padding: 0 0.5em;
+  padding: 0.7em 0 0 0;
 
 }
 
@@ -154,7 +160,7 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7em 0em;
+  /* padding: 0.7em 0em; */
 }
 
 .item-content-title {
@@ -179,7 +185,7 @@ i {
 }
 
 .item-price-container {
-  padding: 0.7em 0;
+  /* padding: 0.7em 0; */
 }
 
 .item-price {
@@ -189,4 +195,10 @@ i {
 .item-price-total {
   font-size: 0.9em;
   color: #666;
+}
+
+@media only screen and (min-width: 900px) {
+
+  
+
 }
