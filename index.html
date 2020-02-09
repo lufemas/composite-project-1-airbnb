@@ -41,27 +41,59 @@
 		</header>
 	
 		<main>
-			<section class="search-result-item">
-				
-				<div class="item-slider-container">
-					<img src="./img/carroussel-placeholder.svg" alt="">
-					<div class="btn-like"><i class="far fa-heart"></i></div>
-				</div>
-				
-				<section class="item-content">
-					<div class="item-content-header">
-						<h2 class="item-content-title">Lorem, ipsum dolor.</h2><div><i class="fas fa-star rate-star"></i> <strong class="rate">5.0</strong> <em class="raters">(12)</em></div>
-					</div>
-						
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore quaerat doloremque labore quasi deserunt quam error, iste cum autem!</p>
+			<article class="left-column">
+
+				<section class="search-result-item">
 					
-					<div class="item-price-container">
-						<p class="item-price">$$$/night</p>
-						<p class="item-price-total">$$$/Total</p>
+					<div class="item-slider-container">
+						<img src="./img/carroussel-placeholder.svg" alt="">
+						<div class="btn-like"><i class="far fa-heart"></i></div>
 					</div>
-				</section>
+					
+					<section class="item-content">
+						<div class="item-content-header">
+							<h2 class="item-content-title">Lorem, ipsum dolor.</h2><div><i class="fas fa-star rate-star"></i> <strong class="rate">5.0</strong> <em class="raters">(12)</em></div>
+						</div>
+							
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore quaerat doloremque labore quasi deserunt quam error, iste cum autem!</p>
+						
+						<div class="item-price-container">
+							<p class="item-price">$$$/night</p>
+							<p class="item-price-total">$$$/Total</p>
+						</div>
 	
-			</section>
+						<button class="btn-view">View</button>
+					</section>
+		
+				</section>
+				<section class="search-result-item">
+					
+					<div class="item-slider-container">
+						<img src="./img/carroussel-placeholder.svg" alt="">
+						<div class="btn-like"><i class="far fa-heart"></i></div>
+					</div>
+					
+					<section class="item-content">
+						<div class="item-content-header">
+							<h2 class="item-content-title">Lorem, ipsum dolor.</h2><div><i class="fas fa-star rate-star"></i> <strong class="rate">5.0</strong> <em class="raters">(12)</em></div>
+						</div>
+							
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore quaerat doloremque labore quasi deserunt quam error, iste cum autem!</p>
+						
+						<div class="item-price-container">
+							<p class="item-price">$$$/night</p>
+							<p class="item-price-total">$$$/Total</p>
+						</div>
+	
+						<button class="btn-view">View</button>
+					</section>
+		
+				</section>
+
+			</article>
+
+			<section id="map"></section>
+			
 		</main>
 	
 	
@@ -71,5 +103,54 @@
 	</section>
 
  
+
+
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			var uluru = {lat: -25.344, lng: 131.036};
+			// The map, centered at Uluru
+			var map = new google.maps.Map(
+					document.getElementById('map'), {zoom: 4, center: uluru});
+			// The marker, positioned at Uluru
+
+			var imageBounds = {
+			north: 40.773941,
+			south: 40.712216,
+			east: -74.12544,
+			west: -74.22655
+		};
+
+		var historicalOverlay = new google.maps.GroundOverlay(
+				'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
+				imageBounds);
+				historicalOverlay.setMap(map);
+
+
+
+			var contentString = '<p>Lorem Ipsum!</p>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+			var marker = new google.maps.Marker({position: uluru, map: map});
+
+			marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+		}
+				</script>
+				<!--Load the API from the specified URL
+				* The async attribute allows the browser to render the page while the API loads
+				* The key parameter will contain your own API key (which is not needed for this tutorial)
+				* The callback parameter executes the initMap() function
+				-->
+				<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlASEhIx5dW-awHS8lWpxSiuMc9pkuJUk&callback=initMap">
+				</script>
+		
 </body>
 </html>

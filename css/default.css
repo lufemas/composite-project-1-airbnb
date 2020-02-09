@@ -101,6 +101,7 @@ button{
 .search-result-item {
   padding: 1.5em;
   background: white;
+  margin-bottom: 1em;
 }
 
 .item-slider-container {
@@ -162,6 +163,7 @@ i {
 }
 
 .item-price-container {
+  margin-top: 1em;
 }
 
 .item-price {
@@ -173,7 +175,15 @@ i {
   color: #666;
 }
 
+.btn-view {
+  display: none;
+}
+
 @media only screen and (min-width: 900px) {
+
+  main {
+    display: flex;
+  }
   
   .header-flex-container {
     flex-direction: column;
@@ -233,6 +243,31 @@ i {
     padding-left:0em;
     right: -30%;
     top: -5%;
+  }
+
+  .search-result-item {
+    display: flex;
+  }
+
+  .item-slider-container{
+    margin-right: 1em;
+    max-width: 24em;
+  }
+
+  .item-content-header{
+    margin-bottom: 2em;
+  }
+
+  .btn-view {
+    margin-top: 3em;
+    display: inline;
+    position: absolute;
+    right: 3em;
+  }
+
+  #map{
+    width: 70%;
+    height: 100vh;
   }
 
 }
