@@ -33,10 +33,14 @@
 				<input type="text">
 				
 				<nav class="search-nav">
-					<button>Define</button>
-					<button>Sort By</button>
+					<button class="btn btn-sort-by">Sort By ⯆</button>
+					<button class="btn btn-distance">Distance ⯆</button>
+					<button class="btn btn-define">Define</button>
+					
+					<!-- <button class="btn-show-map">Hide Map</button> -->
 				</nav>
 			</div>
+			<div class="active-filters"><button>Filter</button></div>
 	
 		</header>
 	
@@ -46,8 +50,10 @@
 				<section class="search-result-item">
 					
 					<div class="item-slider-container">
-						<img src="./img/carroussel-placeholder.svg" alt="">
-						<div class="btn-like"><i class="far fa-heart"></i></div>
+						<div class="room-img"></div>
+						<img src="https://source.unsplash.com/random/1200x800/?room,breakfast" alt="">
+						<div class="btn-next btn-carousel"><i class="fas fa-chevron-circle-right"></i></div>
+						<div class="btn-prev btn-carousel"><i class="fas fa-chevron-circle-left"></i></div>
 					</div>
 					
 					<section class="item-content">
@@ -57,10 +63,15 @@
 							
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore quaerat doloremque labore quasi deserunt quam error, iste cum autem!</p>
 						
-						<div class="item-price-container">
-							<p class="item-price">$$$/night</p>
-							<p class="item-price-total">$$$/Total</p>
+						<div class="item-content-footer">
+							<div class="item-price-container">
+								<p class="item-price">$$$/night</p>
+								<p class="item-price-total">$$$/Total</p>
+							</div>
+							<div class="btn-like"><i class="fas fa-heart"></i></div>
 						</div>
+
+						
 	
 						<button class="btn-view">View</button>
 					</section>
@@ -69,8 +80,10 @@
 				<section class="search-result-item">
 					
 					<div class="item-slider-container">
-						<img src="./img/carroussel-placeholder.svg" alt="">
-						<div class="btn-like"><i class="far fa-heart"></i></div>
+						<div class="room-img"></div>
+						<img src="https://source.unsplash.com/random/1200x800/?room,bed" alt="">
+						<div class="btn-next btn-carousel"><i class="fas fa-chevron-circle-right"></i></div>
+						<div class="btn-prev btn-carousel"><i class="fas fa-chevron-circle-left"></i></div>
 					</div>
 					
 					<section class="item-content">
@@ -80,10 +93,15 @@
 							
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore quaerat doloremque labore quasi deserunt quam error, iste cum autem!</p>
 						
-						<div class="item-price-container">
-							<p class="item-price">$$$/night</p>
-							<p class="item-price-total">$$$/Total</p>
+						<div class="item-content-footer">
+							<div class="item-price-container">
+								<p class="item-price">$$$/night</p>
+								<p class="item-price-total">$$$/Total</p>
+							</div>
+							<div class="btn-like"><i class="fas fa-heart"></i></div>
 						</div>
+
+						
 	
 						<button class="btn-view">View</button>
 					</section>
