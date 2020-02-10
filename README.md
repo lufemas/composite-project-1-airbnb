@@ -1,5 +1,7 @@
 # Default Project Template
 
+<a target="_blank" href="https://lufemas.github.io/composite-project-1-airbnb/">Live Site</a>
+
 A _simple_ template for _simple_ html/css projects.
 
 
