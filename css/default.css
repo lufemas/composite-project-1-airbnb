@@ -311,6 +311,11 @@ i {
     padding: 1.5em;
     font-size: 1em;
   }
+
+  .btn-main-nav:active{
+    background-color: rgba(0,0,0,0.1);
+  } 
+
   .btn-drop-down-nav{
     display: none;
   }
