@@ -22,10 +22,10 @@
 					<button class="btn-drop-down-nav">▼</button>
 				</div>	
 				<ul class="main-nav-bar">
-					<li>En (CA)</li>
-					<li>$ CAD</li>
-					<li>Login</li>
-					<li>Sign Up</li>
+					<a href="#" class="btn-main-nav"><li>En (CA) ⯆</li></a>
+					<a href="#" class="btn-main-nav"><li>$ CAD ⯆</li></a>
+					<a href="#" class="btn-main-nav"><li>Login</li></a>
+					<a href="#" class="btn-main-nav"><li>Sign Up</li></a>
 				</ul>
 			</nav>
 			
@@ -40,7 +40,12 @@
 					<!-- <button class="btn-show-map">Hide Map</button> -->
 				</nav>
 			</div>
-			<div class="active-filters"><button>Filter</button></div>
+			<div class="active-filters">
+				<button class="btn-filter">Feb. 27 - Mar. 1</button>
+				<button class="btn-filter">2 guests</button>
+				<button class="btn-filter">Type of place</button>
+				<button class="btn-filter">+</button>
+			</div>
 	
 		</header>
 	
@@ -127,10 +132,11 @@
 		// Initialize and add the map
 		function initMap() {
 			// The location of Uluru
-			var uluru = {lat: -25.344, lng: 131.036};
+			var barra_da_lagoa = {lat: -27.5789399, lng: -48.4412586};
+			var lagoinha_do_leste = {lat: -27.7739095, lng: -48.4898743};
 			// The map, centered at Uluru
 			var map = new google.maps.Map(
-					document.getElementById('map'), {zoom: 4, center: uluru});
+					document.getElementById('map'), {zoom: 11, center: barra_da_lagoa});
 			// The marker, positioned at Uluru
 
 			var imageBounds = {
@@ -146,18 +152,25 @@
 				historicalOverlay.setMap(map);
 
 
-
-			var contentString = '<p>Lorem Ipsum!</p>';
+			var contentString = 
+			'<img style="width:100%" src="https://source.unsplash.com/random/1200x800/?room,bed" alt="">'+
+			'<br> '+
+			'<p style="font-size:1.2rem" >I loved the breakfast!</p> ';
 
   var infowindow = new google.maps.InfoWindow({
     content: contentString
   });
 
-			var marker = new google.maps.Marker({position: uluru, map: map});
-
-			marker.addListener('click', function() {
-    infowindow.open(map, marker);
+			var marker_barra = new google.maps.Marker({position: barra_da_lagoa, map: map});
+			marker_barra.addListener('click', function() {
+    infowindow.open(map, marker_barra);
   });
+
+		var marker_leste = new google.maps.Marker({position: lagoinha_do_leste, map: map});
+				marker_leste.addListener('click', function() {
+			infowindow.open(map, marker_leste);
+		});
+
 
 		}
 				</script>
