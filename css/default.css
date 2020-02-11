@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 :root {
   /* --bg-color: #FFF6E3; */
   --bg-color: rgb(255, 251, 242);
@@ -12,6 +14,7 @@ button:focus {
 
 body {
   background: var(--bg-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn {
@@ -162,7 +165,6 @@ body {
 
 .btn-filter:active {
   border: solid 0.15em rgba(0,0,0,0);
-  margin: 0;
   cursor: pointer;
   background-color: var(--bg-color);
 }
@@ -174,7 +176,7 @@ main {
 .search-result-item {
   padding: 1.5em 0.5em;
   background: var(--bg-color);
-  margin-bottom: .5em;
+  /* margin-bottom: .5em; */
   border-top: solid lightgray 0.01em;
   
 }
@@ -363,9 +365,19 @@ i {
   main {
     display: flex;
   }
+
+  .left-column {
+    padding-right: 1em;
+  }
+
   .search-result-item {
     display: flex;
     align-items: center;
+    padding: 1em 0.5em 1em 0.5em;
+  }
+
+  .search-result-item:hover{
+    background-color:white;
   }
 
   .item-slider-container{
