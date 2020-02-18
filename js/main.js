@@ -1,21 +1,31 @@
   
   const leftColunm = document.getElementsByClassName("left-column")[0];
   const stickyMap = document.getElementsByClassName("sticky-map")[0];
+  let currentScrollY;
 
 
+
+// I didn't use display none and block/inline for the Show Buttons because I was having some bugs
 
   const btnShowMap = document.getElementsByClassName("show-map")[0];
   btnShowMap.addEventListener("click", () => {
-   
+
+    currentScrollY = window.scrollY;
+    console.log("currentScrollY: " + currentScrollY);
     leftColunm.style.display = "none";
     stickyMap.style.display = "block";
     btnShowMap.style.bottom = "-100em";
     btnShowMap.style.opacity = "0";
     btnShowList.style.bottom = "0.01em";
     btnShowList.style.opacity = "1";
-
+    
+    window.scrollTo(0, 0); // So the user can view the full map
 
   });
+
+  // window.onscroll = () => {
+  //   console.log(window.scrollY);
+  // }
 
   const btnShowList = document.getElementsByClassName("show-list")[0];
   btnShowList.addEventListener("click", () => {
@@ -26,11 +36,29 @@
     btnShowList.style.opacity = "0";
     btnShowMap.style.bottom = "0.01em";
     btnShowMap.style.opacity = "1";
+    window.scrollTo(0, currentScrollY);
 
   });
+
+
   
+  window.onresize = () => {
+    if ( window.innerWidth >= 900){
+      stickyMap.style.display = "block";
+      leftColunm.style.display = "block";
+    }
+    else {
+      stickyMap.style.display = "none";
+      leftColunm.style.display = "block";
+      stickyMap.style.display = "none";
+      btnShowList.style.bottom = "-100em";
+      btnShowList.style.opacity = "0";
+      btnShowMap.style.bottom = "0.01em";
+      btnShowMap.style.opacity = "1";
+    }
+  }
   
-  
+  // ---------------------- MAPS Down Here ---------------------- //
   
   // Initialize and add the map
   function initMap() {
@@ -75,21 +103,6 @@
 
     });
     console.log('here: '+contentStrings[1])
-
-// var infowindows = [ new google.maps.InfoWindow({
-//   content: contentStrings[0]}),
-// ]
-// 		var marker_barra = new google.maps.Marker({position: barra_da_lagoa, map: map});
-// 		marker_barra.addListener('click', function() {
-// 			infowindows[0].open(map, marker_barra);
-// });
-// 		infowindows[0].open(map, marker_barra);
-
-// 	var marker_leste = new google.maps.Marker({position: lagoinha_do_leste, map: map});
-// 			marker_leste.addListener('click', function() {
-// 				infowindows[1].open(map, marker_leste);
-// 	});
-// 	infowindows[1].open(map, marker_leste);
 
 
   }

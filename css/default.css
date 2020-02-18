@@ -337,7 +337,8 @@ i {
 
 .show-list {
   display: block;
-  bottom: -100em;
+  opacity: 0;
+  bottom: 0.1em;
 }
 
 #map{
@@ -355,6 +356,72 @@ i {
   top:0;
   display: none;
 }
+
+
+.website-footer{
+  border-top: solid var(--border-color-light) 0.01em;
+}
+
+.website-footer a{
+  text-decoration: none; 
+  color: var(--text-color);
+} 
+
+.website-footer a:hover{
+  text-decoration: underline; 
+} 
+
+
+.footer-nav{
+  margin: 1.5em;
+  line-height: 2.5em;
+  font-size: 0.9em;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+}
+
+.footer-nav ul {
+  border-top: solid 0.01em var(--border-color-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em 0;
+}
+
+.footer-nav ul strong {
+  grid-column: span 2;
+}
+
+.footer-nav ul:first-of-type {
+  border: none;
+} 
+
+
+.legal{
+  border-top: solid var(--border-color-light) 0.01em;
+  padding: 1.5em;
+  line-height: 2em;
+  font-size: 0.9em;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.social-icon{
+  height: 1.4em;
+  margin: 0 0.7em;
+}
+
+.social-icons a:hover{
+  text-decoration: none;
+  color: var(--logo-green-color);
+}
+
+.social-icons img:hover{
+  fill: var(--logo-green-color);
+  filter: invert(48%) sepia(60%) saturate(459%) hue-rotate(59deg) brightness(105%) contrast(89%); /* Using this great tool: https://codepen.io/sosuke/pen/Pjoqqp*/
+}
+
 
 @media only screen and (min-width: 900px) {
 
@@ -574,6 +641,12 @@ i {
     font-size: 0.9em;
     display: flex;
     justify-content: space-around;
+  }
+
+  .footer-nav ul{
+    display: block;
+    border: none;
+    padding: 0;
   }
 
 
