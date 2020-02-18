@@ -1,5 +1,7 @@
 # Airbnb Redesigning
 
+<a href="https://lufemas.github.io/composite-project-1-airbnb/">Live Project</a>
+
 Redesigning of Airbnb web page and brading.
 
 <!-- - <a href="https://lufemas.github.io/CSS-Grid-Checkers/">Play Here (WIP)</a> -->
