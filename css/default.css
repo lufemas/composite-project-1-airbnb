@@ -113,7 +113,7 @@ body {
 
 .main-nav:hover .btn-drop-down-nav {
   transform: scale(1, -1);
-}
+} 
 
 .btn-main-nav{
   text-decoration: none;
@@ -205,11 +205,11 @@ body {
 }
 
 main {
-  padding: 0 0 0 1em;
+  padding: 0 1em;
 }
 
 .search-result-item {
-  padding: 1.5em 0.5em;
+  padding: 1.5em 0m;
   background: var(--bg-color);
   /* margin-bottom: .5em; */
   border-top: solid var(--border-color-light) 0.01em;
@@ -414,11 +414,11 @@ i {
 
 .social-icons a:hover{
   text-decoration: none;
-  color: var(--logo-green-color);
+  /* color: var(--logo-green-color); */
 }
 
 .social-icons img:hover{
-  fill: var(--logo-green-color);
+  /* fill: var(--logo-green-color); */
   filter: invert(48%) sepia(60%) saturate(459%) hue-rotate(59deg) brightness(105%) contrast(89%); /* Using this great tool: https://codepen.io/sosuke/pen/Pjoqqp*/
 }
 
