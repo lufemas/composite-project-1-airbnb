@@ -10,7 +10,7 @@ Redesigning of Airbnb web page and brading.
 -   ...
 
 ## Limitation:
--   ...
+-   ..
 
 <hr>
 
