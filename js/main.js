@@ -43,7 +43,7 @@
 
   
   window.onresize = () => {
-    if ( window.innerWidth >= 1100){
+    if ( window.innerWidth >= 1200){
       stickyMap.style.display = "block";
       leftColunm.style.display = "block";
     }
