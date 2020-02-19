@@ -213,7 +213,19 @@ main {
   background: var(--bg-color);
   /* margin-bottom: .5em; */
   border-top: solid var(--border-color-light) 0.01em;
-  
+  position: relative;
+}
+
+.superhost::before {
+  position: absolute;
+  content: 'SUPERHOST';
+  background-color: white;
+  top: 2.5em;
+  left: 0;
+  display: block;
+  width: inherit;
+  rotate: -45deg;
+  z-index: 3;
 }
 
 .item-slider-container {
