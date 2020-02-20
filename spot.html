@@ -23,6 +23,7 @@
         <button class="btn-drop-down-nav">▼</button>
       </div>	
       <ul class="main-nav-bar">
+        <a href="./index.html" class="btn-main-nav"><li>Home</li></a>
         <a href="#" class="btn-main-nav"><li>En (CA) ▼</li></a>
         <a href="#" class="btn-main-nav"><li>$ CAD ▼</li></a>
         <a href="#" class="btn-main-nav"><li>Login</li></a>
@@ -46,21 +47,58 @@
   </header>
 
   <article class="image-gallery">
-		<img src="https://source.unsplash.com/random/1200x800/?florianopolis" alt="">
+		<img class="primary-img" src="https://source.unsplash.com/random/1200x800/?florianopolis" alt="">
+		<img class="secondary-img" src="https://source.unsplash.com/random/1200x800/?beach" alt="">
+		<img class="secondary-img" src="https://source.unsplash.com/random/1200x800/?restaurant" alt="">
+		<img class="secondary-img" src="https://source.unsplash.com/random/1200x800/?bed" alt="">
+		<img class="secondary-img" src="https://source.unsplash.com/random/1200x800/?breakfast" alt="">
 	</article>
 
   <main>
     <section class="left-colunm">
 
-			<h1>Room near Downtown</h1>
+			<article class="about-spot" >
+				<h1>Room near Downtown</h1>
+
+				<ul class="spot-highlights" >
+					<li><i class="fas fa-home"></i> Private room in apartment <p>2 guests · 1 bedroom · 1 bed · 1 shared bath</p></li>
+					<li><i class="fas fa-broom"></i> Sparkling clean<p>3 recent guests said this place was sparkling clean.</p></li>
+					<li><i class="fas fa-medal"></i> Hosted by a SUPERHOST<p>Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</p></li>
+				</ul>
+	
+				<p>The apartment is fully furnished and shared. It is in a gated community with great security and doorman 24h. It is located 5 minutes from the center of Florianópolis. It has a patio with availability for hiking and has a garage. It is close to the continental sea border and the north sea border. Close to supermarkets and all availability of trade</p>
+			
+				<h2>Amenities</h2>
+
+				<section class="amenities">
+				<p><i class="fas fa-wifi"></i> Wifi</p>
+				<p><i class="fas fa-car"></i> Free Parking</p>
+				<p><i class="fas fa-utensils"></i> Kitchen</p>
+				<p><i class="fas fa-swimming-pool"></i> Swimming Pool</p>
+			</section>
+			</article>
+
+			
 
       <article class="available-dates">
         <input type="checkbox" name="" id="cb-box-1" class="collapse-cb">
         <label class="collapsable-label" for="cb-box-1" ><span>Availability</span> <i class="collapse-icon fas fa-angle-double-down"></i></label>
         <div class="box">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
-          <iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23fffbf2&amp;ctz=America%2FToronto&amp;src=aXE5NjF2bThkaDBjZHJmODAwc2FwYmQzZTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showTitle=0&amp;showNav=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border:solid 1px #777" width="300" height="300" frameborder="0" scrolling="no" class="calendar" ></iframe>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+					<p>This host offers 10% off if you stay a week and a 25% monthly discount.</p>
+				
+					<section class="calendar-box">
+						<div class="calendar">
+							<p><strong>February 2020</strong></p>
+							<img src="./img/calendar.png" alt="February Calendar" >
+						</div>
+
+						<div class="calendar secondary-img">
+							<p><strong>March 2020</strong></p>
+							<img src="./img/calendar.png" alt="March Calendar" >
+						</div>
+					</section>
+						
+					
         </div>
       </article>
 
@@ -68,9 +106,91 @@
         <input type="checkbox" name="" id="cb-box-2" class="collapse-cb">
         <label class="collapsable-label" for="cb-box-2"><span>Reviews</span> <i class="collapse-icon fas fa-angle-double-down"></i></label>
         <div class="box">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
-          **********************
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dolor.</p>
+
+					<section class="total-review" >
+						<i class="fas fa-star rate-star"></i> 
+						<strong class="rate">3.4</strong> 
+						<em class="raters">(46 Reviews)</em>
+					</section>
+
+					<section class="bar-review">
+						<p class="bar-subject">Cleanliness</p>
+						<div class="bar-plus w-50"></div>
+						<div class="bar-void w-10"></div>
+						<strong class="bar-grade">4.9</strong>
+					</section>
+
+					<section class="bar-review">
+						<p class="bar-subject">Accuracy</p>
+						<div class="bar-plus w-30"></div>
+						<div class="bar-void w-30"></div>
+						<strong class="bar-grade">2.8</strong>
+					</section>
+
+					<section class="bar-review">
+						<p class="bar-subject">Check-in</p>
+						<div class="bar-plus w-20"></div>
+						<div class="bar-void w-40"></div>
+						<strong class="bar-grade">1.8</strong>
+					</section>
+
+					<section class="bar-review">
+						<p class="bar-subject">Communication</p>
+						<div class="bar-plus w-40"></div>
+						<div class="bar-void w-20"></div>
+						<strong class="bar-grade">3.7</strong>
+					</section>
+
+					<section class="bar-review">
+						<p class="bar-subject">Value</p>
+						<div class="bar-plus w-50"></div>
+						<div class="bar-void w-10"></div>
+						<strong class="bar-grade">4.5</strong>
+					</section>
+
+					<section class="bar-review">
+						<p class="bar-subject">Location</p>
+						<div class="bar-plus w-30"></div>
+						<div class="bar-void w-30"></div>
+						<strong class="bar-grade">2.7</strong>
+					</section>
+
+          <section class="user-review">
+						<img src="./img/user1.png" alt="">
+						<div>
+							<strong>Giuseppe Viena</strong>
+							<p>January 2020</p>
+						</div>
+						<p>I recommend this places if you are looking at good price 5 minutes from downtown</p>
+					</section>
+
+					<section class="user-review">
+						<img src="./img/user2.png" alt="">
+						<div>
+							<strong>Amanda</strong>
+							<p>November 2019</p>
+						</div>
+						<p>Ana is an amazing host. She's got great suggestions for local things to do, and she's very warm and friendly. I'd stay with her again any time.</p>
+					</section>
+
+					<section class="user-review">
+						<img src="./img/user3.png" alt="">
+						<div>
+							<strong>Monica</strong>
+							<p>July 2019</p>
+						</div>
+						<p>Very confy home and it's near everything.</p>
+					</section>
+
+					<section class="user-review">
+						<img src="./img/user4.png" alt="">
+						<div>
+							<strong>Sue Regina</strong>
+							<p>November 2019</p>
+						</div>
+						<p>Ana is a nice host, with experience in hospitability and who tries to accommodate every need.</p>
+					</section>
+
         </div>
 			</article> 
 			

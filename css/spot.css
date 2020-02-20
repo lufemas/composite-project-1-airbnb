@@ -1,4 +1,4 @@
-  body{
+  html{
     overflow-x: hidden;
 
   }
@@ -18,6 +18,16 @@
     text-decoration: inherit;
   }
 
+  h1{
+    font-size: 1.8em;
+    margin: 1em 0;
+  }
+
+  h2{
+    font-size: 1.4em;
+    margin: 1em 0;
+  }
+
   h5{
     font-size: 1em;
   }
@@ -33,14 +43,57 @@
     /* position: relative; */
   }
 
+  .secondary-img{
+    display: none;
+  }
+
   .left-colunm {
     /* padding: 0em 1.5em; */
   }
 
 
-  .calendar {
+  .about-spot {
+    margin: 1em 1.5em;
+    /* border-bottom: var(--border-color-light) solid 0.2em; */
+  }
+
+  .about-spot>p{
+    margin: 2em 0 0 0;
+  }
+
+  .spot-highlights{
+    margin: 1em 0;
+  }
+
+  .spot-highlights li{
+    font-weight: bold;
+    margin: .5em 0;
+  }
+
+  .spot-highlights li p{
+    font-weight: normal;
+    margin-left: 1.5em;
+  }
+
+  .amenities {
+    display: grid;
+    margin: 1em 0.1em;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: gray; */
+  }
+
+  .amenities p {
+    padding: 0.5em;
+  }
+
+  .calendar-box{
     width: 100%;
   }
+
+  /* .calendar {
+    width: 100%;
+    height: 15em;
+  } */
 
   .collapse-cb {
     display: none;
@@ -50,6 +103,7 @@
     display: flex;
     /* line-height: 2em; */
     padding: 1em 0;
+    font-weight: bold;
     margin: 0 1.5em;
     justify-content: space-between;
     /* background-color: thistle; */
@@ -69,6 +123,10 @@
     transition-property: transform, opacity, height;
     transition-duration: 0.5s;
     transform-origin: top;
+  }
+
+  .box p {
+    margin-bottom: 1em;
   }
 
   .collapse-cb:checked ~ .box{
@@ -91,7 +149,7 @@
 
   .collapse-cb:checked + label{
     border: none;
-    font-weight: bolder;
+    font-weight: lighter;
     /* background-color: black; */
     
   }
@@ -100,14 +158,73 @@
     content: "A";
   } */
 
-  .book-card{
-    padding: 1em 1.5em;
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    bottom: 0;
-    background-color: white;
+  .total-review{
+    font-size: 1.5em;
+    margin-bottom: 1em;
   }
+
+  .bar-review{
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+  }
+
+  .bar-review .bar-subject{
+    width: 50%;
+    /* margin-right: 5em; */
+  }  
+  .bar-review .bar-plus{
+    background-color: var(--logo-green-color);    
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+    height: 0.2em;
+  }  
+  .bar-review .bar-void{
+    background-color: lightgrey;
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+    height: 0.2em;
+  }  
+
+  .w-10{
+    width: 10%;
+  }
+  .w-20{
+    width: 20%;
+  }
+  .w-30{
+    width: 30%;
+  }
+  .w-40{
+    width: 40%;
+  }
+  .w-50{
+    width: 50%;
+  }
+
+  .bar-review .bar-grade{
+    width: 20%;
+    margin-left: 1em;
+  }  
+
+  .user-review{
+    display: grid;
+    margin: 1.5em 0.5em;
+    grid-template-columns: 1fr 4fr;
+    gap: 0em;
+    border-bottom: var(--border-color-light) solid 0.01em;
+  }
+
+  .user-review p{
+    grid-column: 1 / 3  ;
+  }  
+
+  .user-review img{
+    border-radius: 50%;
+    height: 3em;
+  }  
+
+
 
   .price{
     align-self: center;
@@ -148,6 +265,16 @@
     font-size: .75em;
   }
 
+  .book-card{
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0em;
+    /* min-width: 45em; */
+    background-color: white;
+  }
+
   .btn-book{
     border: none;
     border-radius: 0.25em;
@@ -157,3 +284,40 @@
     font-family: 'AirbnbCerealMedium';
     padding: 0.8em 1.2em;
   }
+
+  @media only screen and (min-width: 650px) {
+    .image-gallery{
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.05em;
+    }
+
+    .primary-img{
+      grid-row: 1 / 3;
+    }
+
+    .secondary-img{
+      display: inline;
+    }
+
+    .left-colunm{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  
+  }
+
+  @media only screen and (min-width: 1200px) {
+
+    .left-colunm{
+      width: 70%;
+    }
+
+    .calendar-box{
+      display: flex;
+      flex-direction: row;
+    }
+  }  
