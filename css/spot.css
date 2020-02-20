@@ -1,7 +1,32 @@
+  body{
+    overflow-x: hidden;
+
+  }
+  
   main {
     position: relative;
-    overflow-x: hidden;
+    color: var(--text-color-2);
+
   }
+
+  main i{
+    font-size: 1em;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  h5{
+    font-size: 1em;
+  }
+
+  h6{
+    font-size: .8em;
+    font-weight: normal;
+  }
+
   
   .image-gallery {
     width: 100%;
@@ -88,10 +113,39 @@
     align-self: center;
   }
 
+  .more-spots-title{
+    margin: 1rem 1.5rem 0 1.5rem;
+    font-size: 1.5em;
+  }
+
   .more-spots{
     display: flex;
-    
     min-width: 45em;
+    margin: 0 1.5em;
+    transition: transform 2s;
+  }
+
+  .more-spots:hover{
+    transform: translateX(-30em);
+  }
+
+  .more-spot{
+    /* margin: 0.5em; */
+    padding: 1em 0.25em;
+    line-height: 1.2em;
+    color: var(--text-color-3);
+  }
+
+  .item-price {
+    font-weight: normal;
+  }
+
+  .rate {
+    font-size: .9em;
+  }
+
+  .rate-star {
+    font-size: .75em;
   }
 
   .btn-book{

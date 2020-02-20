@@ -20,6 +20,9 @@
 }
 
 
+i {
+  font-size: 2em;
+}
 
 button:focus {
   outline: none;
@@ -180,6 +183,46 @@ color: var(--text-color-3);
 
 .btn-distance {
 display: none;
+}
+
+/* --------------------------------- */
+
+.rate-star {
+  color: goldenrod;
+  font-size: 1em;
+}
+
+.rate {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.raters {
+  font-weight: 100;
+  font-style: normal;
+  font-size: .8em;
+  color: #666;
+}
+
+
+.item-price-container {
+  margin-top: 1em;
+}
+
+.item-price-container p {
+  font-family: 'AirbnbCerealMedium';
+}
+
+
+.item-price {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.item-price-total {
+  font-size: 0.8em;
+  color: #666;
+  font-weight: medium;
 }
 
 /* --------------------------------- */
