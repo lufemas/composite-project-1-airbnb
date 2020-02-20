@@ -1,0 +1,37 @@
+  .image-gallery {
+    width: 100%;
+  }
+
+  .calendar {
+    width: 100%;
+  }
+
+  .collapse-cb {
+    display: none;
+  }
+
+  label::after{
+    content: "V";
+  }
+
+  .box{
+    /* display: none; */
+    transform: scaleY(0);
+    height: 0;
+    opacity: 0;
+    transition-property: transform, opacity, height;
+    transition-duration: 0.5s;
+    transform-origin: top;
+  }
+
+  .collapse-cb:checked ~ .box{
+    transform: scaleY(1);
+    /* display: block; */
+    height: auto;
+    opacity: 1;
+    
+  }
+
+  .collapse-cb:checked + label::after{
+    content: "A";
+  }
