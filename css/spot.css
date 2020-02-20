@@ -1,6 +1,17 @@
+  main {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
   .image-gallery {
     width: 100%;
+    /* position: relative; */
   }
+
+  .left-colunm {
+    /* padding: 0em 1.5em; */
+  }
+
 
   .calendar {
     width: 100%;
@@ -10,9 +21,20 @@
     display: none;
   }
 
-  label::after{
-    content: "V";
+  .collapsable-label {
+    display: flex;
+    /* line-height: 2em; */
+    padding: 1em 0;
+    margin: 0 1.5em;
+    justify-content: space-between;
+    /* background-color: thistle; */
+    border-bottom: solid 0.1em var(--border-color-light);
+
   }
+
+  /* label::after{
+    content: "V";
+  } */
 
   .box{
     /* display: none; */
@@ -29,9 +51,55 @@
     /* display: block; */
     height: auto;
     opacity: 1;
+    background-color: white;
+    padding: 1em 1.5em;
+    border-top: solid 0.1em var(--border-color-light);
+
+
+    
+  }
+  .collapse-cb:checked + label .collapse-icon{
+    transform: rotate(180deg);
+    /* background-color: black; */
     
   }
 
+  .collapse-cb:checked + label{
+    border: none;
+    font-weight: bolder;
+    /* background-color: black; */
+    
+  }
+/* 
   .collapse-cb:checked + label::after{
     content: "A";
+  } */
+
+  .book-card{
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+  }
+
+  .price{
+    align-self: center;
+  }
+
+  .more-spots{
+    display: flex;
+    
+    min-width: 45em;
+  }
+
+  .btn-book{
+    border: none;
+    border-radius: 0.25em;
+    width: 48%;
+    background-color: var(--logo-red-color);
+    color: white;
+    font-family: 'AirbnbCerealMedium';
+    padding: 0.8em 1.2em;
   }

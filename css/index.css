@@ -9,6 +9,7 @@
   margin: 0 1em 1em 1em;
 }
 
+
 .btn-filter {
   background-color: white;
   padding: 0.5em 1em;
@@ -32,6 +33,13 @@
 main {
   padding: 0 1em;
 }
+
+.search-result-item a, .search-result-item a:visited {
+  text-decoration: inherit;
+  color: inherit;
+} 
+
+
 
 .search-result-item {
   padding: 1.5em 0em;
@@ -62,7 +70,7 @@ main {
 .item-slider-container {
   
   width: 100%;
-  background: gray url('../img/carroussel-placeholder.svg') no-repeat;
+  /* background: gray url('../img/carroussel-placeholder.svg') no-repeat; */
   background-size: contain;
   position: relative;
   /* flex-grow: 1; */
@@ -266,11 +274,19 @@ i {
   }
 
   .search-result-item {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     padding: 0em 0.5em 1em 0.5em;
    
   }
+
+  .search-result-item a{
+    display: flex;
+    /* align-items: center;
+    padding: 0em 0.5em 1em 0.5em; */
+   
+  }
+
 
   .search-result-item:hover{
     background-color:white;
@@ -428,7 +444,6 @@ i {
     display: block;
   }
 
-  
 
 
 }
