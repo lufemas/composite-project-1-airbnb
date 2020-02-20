@@ -113,23 +113,23 @@
     align-self: center;
   }
 
-  .more-spots-title{
+  .more-box-title{
     margin: 1rem 1.5rem 0 1.5rem;
     font-size: 1.5em;
   }
 
-  .more-spots{
+  .more-box{
     display: flex;
     min-width: 45em;
     margin: 0 1.5em;
     transition: transform 2s;
   }
 
-  .more-spots:hover{
+  .more-box:hover{
     transform: translateX(-30em);
   }
 
-  .more-spot{
+  .more-spot, .more-xp{
     /* margin: 0.5em; */
     padding: 1em 0.25em;
     line-height: 1.2em;
