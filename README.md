@@ -25,8 +25,15 @@ Redesigning of Airbnb web page and brading.
 -   ~~Fix Small screen Footer~~ <strong> DONE </strong> - 18/02/2020
 -   Remove colors from page selector ( Less colors = more booking closer)
 -   ~~Include intermediate screen size~~
--   Change footer bg color or/and add more padding-top
+-   ~~Change footer bg color or/and add more padding-top~~ <strong> DONE </strong> - 21/02/2020 - Padding and margin, divisor line more with more contrast
 -   ~~Remove the side paddings from search items so they can aligh with the header ( mobile )~~ <strong> DONE </strong> - 18/02/2020
 -   ~~Introduce a room hilight option for SuperHot or/and Rare Finds~~ <strong> DONE </strong> - 20/02/2020
 -   ~~Second page~~ <strong> DONE </strong> - 20/02/2020
+-   Try a ingle bar on Spot Page Header: LOGO | SEARCH BAR | MAIN NAV
+
+### Bug Tracking:
+#### Search Result Page
+-   Toggle Map Button: Sometimes the first click after a fresh reload doesn't work, after the second click everything works fine. ( Mobile and Medium Viewport ) - 21/02/2020
+#### Spot Detail Page
+-   Sticky Book Button ( Mobile ): On Responsive mode from Browser, the button sometimes keep sticked to a range of the viewport, if I just change the viewport height on browser ( Even if I ame back to previous height ) everything works well, and works fine too if insted using the Respondive Tool I just strech the inspect frame to simulate a small screen. - 21/02/2020
 

@@ -228,7 +228,9 @@ display: none;
 /* --------------------------------- */
 
 .website-footer{
-  border-top: solid var(--border-color-light) 0.01em;
+  margin-top: 2em;
+  padding-top: 3em;
+  border-top: solid var(--border-color) 0.05em;
 }
 
 .website-footer a{
@@ -431,7 +433,7 @@ display: none;
     line-height: 2em;
     font-size: 0.9em;
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: auto;
     justify-content: space-between;
   }
