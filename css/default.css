@@ -308,7 +308,7 @@ display: none;
 
 
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 40em) {
   .header-flex-container {
     flex-direction: column;
     padding: 0 1em;
@@ -411,7 +411,7 @@ display: none;
   }
 }  
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75em) {
   .footer-nav{
     margin: 1.5em;
     line-height: 2.5em;

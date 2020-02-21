@@ -2,7 +2,7 @@
     overflow-x: hidden;
 
   }
-  
+
   main {
     position: relative;
     color: var(--text-color-2);
@@ -303,7 +303,7 @@
     padding: 0.8em 1.2em;
   }
 
-  @media only screen and (min-width: 650px) {
+  @media only screen and (min-width: 40em) {
     .image-gallery{
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
@@ -332,8 +332,17 @@
   
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 75em) {
 
+    .header-flex-container{
+      flex-direction: row;
+      margin-bottom: 1em;
+      justify-content: space-between;
+    }
+
+    .search{
+      margin-left: 2em;
+    }
     
     main{
       display: flex;

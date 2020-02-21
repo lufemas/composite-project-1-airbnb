@@ -202,7 +202,7 @@ main {
 
 
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 40em) {
 
   
   .loading-gif {
@@ -388,7 +388,7 @@ main {
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75em) {
 
   .page-wrap{
     /* display: grid;
