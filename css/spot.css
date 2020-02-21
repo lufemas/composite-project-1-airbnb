@@ -6,7 +6,7 @@
   main {
     position: relative;
     color: var(--text-color-2);
-
+    font-family: 'AirbnbCerealLight';
   }
 
   main i{
