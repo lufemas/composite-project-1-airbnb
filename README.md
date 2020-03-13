@@ -1,6 +1,6 @@
 # Airbnb Redesign Proposal
 
-<a href="https://lufemas.github.io/composite-project-1-airbnb/">Live Project</a>
+<a href="https://lufemas.github.io/composite-project-1-airbnb/">Live Page</a>
 
 Redesigning of Airbnb web page and brading.
 
